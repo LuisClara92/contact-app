@@ -1,12 +1,26 @@
 /* Component enclosing tag */
 .Contact {
-    padding: 1em;
+    /* padding: 1e */
     background: #555;
     width: 220px;
+    margin: 30px;
+    border-radius: 5px;
+  }
+  .Contact .shadow-online {
+    padding: 1em;
+    border-radius: 5px;
     display: flex;
     align-items: center;
+    box-shadow: 2px 3px 2px 2px #aed581;
   }
   
+  .Contact .shadow-offline {
+    padding: 1em;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    box-shadow: 2px 3px 2px 2px #d58181;
+  }
   /* Contact image */
   .Contact .avatar {
     border-radius: 50%;
@@ -32,6 +46,7 @@
   .Contact .status .status-online,
   .Contact .status .status-offline {
     display: inline-block;
+    justify-content: center;
     border-radius: 50%;
     width: 8px;
     height: 8px;
@@ -45,3 +60,4 @@
   .Contact .status .status-offline {
     background: #f4511e;
   }
+  
